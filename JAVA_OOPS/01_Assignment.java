@@ -1,3 +1,30 @@
+// 1. Write a Java program to convert an integer number to a binary number.
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int num = scanner.nextInt();
+        
+        String binary = "";
+
+        while (num > 0) {
+            binary = (num % 2) + binary;
+            num /= 2;
+        }
+
+        System.out.println("Binary representation: " + (binary.isEmpty() ? "0" : binary));
+        scanner.close();
+    }
+}
+
+
+// 2. Write a Java program to count letters, spaces, numbers and other characters in an input string.
+
+
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
