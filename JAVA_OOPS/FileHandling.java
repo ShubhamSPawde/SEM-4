@@ -23,7 +23,6 @@ public class FileHandling {
 
         
         // Word and Sentence cnt
-
         Scanner scrn = new Scanner(f);
 
         int wordCount = 0;
